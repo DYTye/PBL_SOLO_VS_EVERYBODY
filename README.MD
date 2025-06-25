@@ -85,9 +85,7 @@ Dokumentasi dan publikasi kegiatan sekolah
 
 Project ini dikembangkan sebagai bagian dari Project Base Learning:
 
-Nama Anda (Developer Utama)
-
-- [**Aditya Arrofi**](https://github.com/DYTye)
+- [**Aditya Arrofi**](https://github.com/DYTye) as Project Manajer,Full-Stack Dev,git master,technical writer,UI UX Designer Dsb.
 
 Silakan buka pull request atau issue jika ingin memberi masukan atau perbaikan.
 
