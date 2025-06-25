@@ -87,14 +87,14 @@ Project ini dikembangkan sebagai bagian dari Project Base Learning:
 
 Nama Anda (Developer Utama)
 
-- **Aditya Arrofi** - [GitHub](https://github.com/DYTye)
+- [**Aditya Arrofi**](https://github.com/DYTye)
 
 Silakan buka pull request atau issue jika ingin memberi masukan atau perbaikan.
 
 Terima kasih sudah menggunakan project ini. Semoga bermanfaat untuk kemajuan sekolah Anda ✨
 ### Special Thanks
 special thanks for developer of template
-- **Vicky Maulana** - [GitHub](https://github.com/vickymaulana)
+- [Vicky Maulana](https://github.com/vickymaulana)
 - [Ahmad Dimas Aldian Al-furqon](https://github.com/anqois)
 - [Abdillah Khalid](https://github.com/KhalidUnsri)
 - [Haikal Tirta Albanna](https://github.com/HaikalAlbanna)
