@@ -85,11 +85,14 @@ Dokumentasi dan publikasi kegiatan sekolah
 
 Project ini dikembangkan sebagai bagian dari Project Base Learning:
 
-- [**Aditya Arrofi**](https://github.com/DYTye) as Project Manajer,Full-Stack Dev,git master,technical writer,UI UX Designer Dsb.
+- [**Aditya Arrofi**](https://github.com/DYTye) as 
+Project Manajer,Full-Stack Dev,Git master,Technical writer,UI UX Designer, Dsb.
 
 Silakan buka pull request atau issue jika ingin memberi masukan atau perbaikan.
 
 Terima kasih sudah menggunakan project ini. Semoga bermanfaat untuk kemajuan sekolah Anda ✨
+
+
 ### Special Thanks
 special thanks for developer of template
 - [Vicky Maulana](https://github.com/vickymaulana)
