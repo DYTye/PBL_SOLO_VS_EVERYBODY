@@ -39,17 +39,7 @@ use App\Http\Controllers\KelebihanSekolahController;
 
 
 Route::get('/', function () {
-    $kepsek = Guru::where('jabatan', 'Kepala sekolah')->first(); 
-    $gurus = Guru::all();
-    $beritas = Berita::all();
-    $visis = VisiMisi::all();
-    $caraosels = Caraosel::all();
-    $sambutans = SambutanKepsek::first();
-    $infos = InfoAkademik::first(); 
-
-    return view('layouts.frontend.dashboard', compact(
-        'kepsek', 'gurus', 'beritas', 'visis', 'caraosels', 'sambutans', 'infos'
-    ));
+return redirect('dashboard');
 });
 
 
@@ -65,9 +55,9 @@ Route::get('beritafe/{id}', [BeritaController::class, 'beritashow'])->name('beri
 Route::get('/kenangan-pdf/{id}', [RaportKenanganController::class, 'exportPdf'])->name('kenangan.pdf');
 Route::post('/kenanganitem', [KenanganItemController::class, 'store'])->name('kenanganitem.store');
 Route::get('/kenanganitem/index/{raport_id}', [KenanganItemController::class, 'index'])->name('kenanganitem.index');
-Route::get('/kenang/{id}', [RaportKenanganController::class, 'show'])->name('kenang.show')
-->withoutMiddleware(['auth']) // <- ini ngebypass auth
-->name('kenangan.pdf');
+// Route::get('/kenang/{id}', [RaportKenanganController::class, 'show'])->name('kenang.show')
+// ->withoutMiddleware(['auth']) 
+// ->name('kenangan.pdf');
 Route::get('/kenangfe',[RaportKenanganController::class,'fe'])->name('kenangfe');
 
 

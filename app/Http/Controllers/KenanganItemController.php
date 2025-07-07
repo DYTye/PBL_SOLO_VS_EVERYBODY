@@ -77,8 +77,15 @@ class KenanganItemController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        $item = KenanganItem::findOrFail($id);
+
+        $item->update($request->all());
+    
+        $raportKenanganId = $item->raport_kenangan_id;
+
         $request->validate([
-            'deskripsi' => 'required|string|max:255',
+            'deskripsi' => 'required|string',
             'kategori' => 'required|in:siswa,guru,cover,isi',
             'halaman' => 'required|string|max:50',
             'gambar' => 'nullable|image|max:2048',
@@ -101,8 +108,11 @@ class KenanganItemController extends Controller
             'halaman' => $request->halaman,
         ]);
 
-        return redirect()->route('kenanganitem.edit', $kenanganitem->id)
+
+    
+        return redirect()->route('kenanganitem.index', $raportKenanganId)
                          ->with('success', 'Item kenangan berhasil diperbarui.');
+
     }
 
     /**

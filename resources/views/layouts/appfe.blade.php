@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Title -->
-    <title>@yield('title') &mdash; Laravel - Stisla</title>
+    <title>@yield('title') &mdash; TK Islam Nurul Falah</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -31,54 +31,75 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Additional CSS (if any) -->
+    <style>
+        html,
+        body {
+            overflow-x: hidden !important;
+        }
+
+        [data-aos] {
+            will-change: transform, opacity;
+            overflow-anchor: none;
+        }
+    </style>
     
+
     @stack('css')
 </head>
 
 
-    
-        
-            <!-- Header -->
-            @include('components.navbar')
-
-            <!-- Sidebar -->
-           
-
-            <!-- Main Content -->
-            <div class="main-content">
-                @yield('content')
-            </div>
-
-            <!-- Footer -->
-            @include('components.footer')
 
 
-    <!-- jQuery and Popper.js (required for Bootstrap 4) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Header -->
+@if (Request::is('dashboard'))
+    @include('components.navbarr')
+@else
+    @include('components.navbar')
+@endif
 
-    <!-- Bootstrap JS (Bootstrap 4) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Sidebar -->
 
-    <!-- Custom JS Libraries -->
-    <script src="{{ asset('library/jquery.nicescroll/dist/jquery.nicescroll.min.js') }}"></script>
-    <script src="{{ asset('library/moment/min/moment.min.js') }}"></script>
 
-    <!-- Template JS Files -->
-    <script src="{{ asset('js/stisla.js') }}"></script>
-    <script src="{{ asset('js/scripts.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
+<!-- Main Content -->
+<div class="">
+    @yield('content')
+</div>
 
-    <!-- AOS Animation -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<!-- Footer -->
+@include('components.footer')
 
-    <!-- Additional JS (if any) -->
-    
 
-    @stack('scripts')
+<!-- jQuery and Popper.js (required for Bootstrap 4) -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS (Bootstrap 4) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JS Libraries -->
+<script src="{{ asset('library/jquery.nicescroll/dist/jquery.nicescroll.min.js') }}"></script>
+<script src="{{ asset('library/moment/min/moment.min.js') }}"></script>
+
+<!-- Template JS Files -->
+<script src="{{ asset('js/stisla.js') }}"></script>
+<script src="{{ asset('js/scripts.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
+
+<!-- AOS Animation -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Additional JS (if any) -->
+<script>
+    AOS.init({
+        once: true,
+        mirror: false
+    });
+</script>
+
+@stack('scripts')
 </body>
 
 </html>

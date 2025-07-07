@@ -1,4 +1,16 @@
 <style>
+    .navbar {
+    background-image: url('/img/header.jpg'); /* atau 'img/namafile.jpeg' */
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%; /* Hindari crop, penuh vertikal */
+    height: 90px; /* atau sesuai tinggi navbar kamu */
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 890;
+    background-color: green;
+}
     .navbar-custom {
         background-color: #0b9748;
         padding: 0.5rem 1rem;
@@ -99,7 +111,7 @@
       <a class="navbar-brand text-white d-flex align-items-center" href="{{ url('dashboard') }}">
         <div class="d-flex align-items-center gap-2">
           <img src="{{ asset('img/logo.png') }}" style="height: 50px; width: 50px;" alt="Logo Sekolah">
-          <span class="fw-bold text-white mx-2">TK ISLAM NURUL FALAH</span>
+          <span class="fw-bold text-white mx-2">NURUL FALAH</span>
       </div>
       
       </a>
@@ -120,7 +132,7 @@
         <a href="{{ url('kelebihanfe') }}" class="menu-link"><i class="fas fa-star mr-1"></i> Kelebihan</a>
         <a href="{{ url('kenangfe') }}" class="menu-link"><i class="fas fa-camera-retro mr-1"></i>Raport Kenangan</a>
       </div>
-    </div>
+    </div>          
 
     {{-- Mobile Menu --}}
     <div class="collapse d-lg-none w-100" id="mobileNavbar">

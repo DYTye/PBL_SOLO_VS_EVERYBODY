@@ -108,7 +108,7 @@
             <div class="card shadow-sm border-0 rounded-4 mb-4">
                 <div class="card-body" >
                     <h4 class="font-weight-bold mb-4 text-success text-center pt-2">
-                        <i class="fas fa-bullseye me-2"></i> Visi
+                        Visi
                     </h4>
                     <ul class="list-group list-group-flush text-center" data-aos="fade-up" data-aos-delay="300">
                         @foreach ($visis as $visi)
@@ -128,15 +128,15 @@
                 <div class="col-md-6 mb-4 d-flex" >
                     <div class="card shadow-sm border-0 rounded-4 equal-height w-100">
                         <div class="card-body d-flex flex-column" >
-                            <h4 class="font-weight-bold mb-4 text-primary text-center pt-2">
-                                <i class="fas fa-tasks me-2"></i> Misi
+                            <h4 class="font-weight-bold mb-4 text-success text-center pt-2">
+                                 Misi
                             </h4>
                             <ul class="list-group list-group-flush text-center flex-grow-1">
                                 @foreach ($visis as $visi)
                                     @if ($visi->jenis == 'misi')
                                         <li class="list-group-item" data-aos="fade-up"
                                             data-aos-delay="{{ $loop->index * 100 }}">
-                                            {{ $visi->isi }}
+                                            "{{ $visi->isi }}"
                                         </li>
                                     @endif
                                 @endforeach
@@ -149,8 +149,8 @@
                 <div class="col-md-6 mb-4 d-flex" >
                     <div class="card shadow-sm border-0 rounded-4 equal-height w-100">
                         <div class="card-body d-flex flex-column">
-                            <h4 class="font-weight-bold mb-4 text-warning text-center pt-2">
-                                <i class="fas fa-flag-checkered me-2"></i> Tujuan
+                            <h4 class="font-weight-bold mb-4 text-success text-center pt-2">
+                                Tujuan
                             </h4>
                             <ul class="list-group list-group-flush text-center flex-grow-1">
                                 @foreach ($visis as $visi)

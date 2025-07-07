@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
+6
                         {{-- Email --}}
                         <div class="mb-3 row">
                             <label for="email" class="col-md-4 col-form-label text-md-end">
@@ -66,10 +66,10 @@
                                 </div>
                             </div>
                         </div>
+                        {!! NoCaptcha::display() !!}
 
                         {{-- reCAPTCHA --}}
                         <div class="mb-3 text-center">
-                            {!! NoCaptcha::display() !!}
                             @if ($errors->has('g-recaptcha-response'))
                                 <div class="text-danger mt-1">
                                     {{ $errors->first('g-recaptcha-response') }}

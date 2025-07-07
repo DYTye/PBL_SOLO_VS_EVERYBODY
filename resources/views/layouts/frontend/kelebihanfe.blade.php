@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-md-7">
                             <div class="p-3 rounded bg-white shadow-sm">
-                                <p class="mb-0 text-dark" style="font-size: 1.1rem; line-height: 1.8;">
+                                <p class="mb-0 text-dark" style=" line-height: 1.8;">
                                     {{ $kelebihan->kelebihan }}
                                 </p>
                             </div>
@@ -32,7 +32,7 @@
                     @else
                         <div class="col-md-7 order-2 order-md-1"data-aos="fade-right" data-aos-delay="200">
                             <div class="p-3 rounded bg-white shadow-sm">
-                                <p class="mb-0 text-dark" style="font-size: 1.1rem; line-height: 1.8;">
+                                <p class="mb-0 text-dark" style=" line-height: 1.8;">
                                     {{ $kelebihan->kelebihan }}
                                 </p>
                             </div>
